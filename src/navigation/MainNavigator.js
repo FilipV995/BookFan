@@ -15,7 +15,7 @@ export default function MainNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {token ? (
+        {!token ? (
           <>
             <Stack.Screen
               name="BottomTab"

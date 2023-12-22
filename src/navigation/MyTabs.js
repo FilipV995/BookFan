@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/HomeScreen";
 import FavouritesScreen from "../screens/FavouritesScreen";
 import EBooksScreen from "../screens/EBooksScreen";
 import LibrariesScreen from "../screens/LibrariesScreen";
 import IconButton from "../components/IconButton";
+import OverviewScreen from "../screens/OverviewScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +17,8 @@ export default function MyTabs() {
       }}
     >
       <Tab.Screen
-        name="Home"
-        component={HomeScreen}
+        name="Overview"
+        component={OverviewScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <IconButton icon={"home-outline"} size={size} color={color} />

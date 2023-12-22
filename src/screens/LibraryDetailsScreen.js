@@ -14,7 +14,7 @@ export default function LibraryDetailsScreen() {
 
   return (
     <View style={styles.container}>
-      {/* <View style={styles.mapContainer}>
+      <View style={styles.mapContainer}>
         {marker ? (
           <MapView
             style={styles.map}
@@ -34,7 +34,7 @@ export default function LibraryDetailsScreen() {
           <Text style={styles.distanceText}>100m</Text>
         </View>
         <Text>Distance from you</Text>
-      </View> */}
+      </View>
     </View>
   );
 }
